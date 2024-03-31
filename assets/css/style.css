@@ -1,5 +1,7 @@
 *{
     background-color: teal;
+    margin: 0;
+    padding: 0;
 }
 
 :root{
@@ -8,11 +10,9 @@
 }
 
 header{
-    background-color: rgb(0, 159, 159);
     color: var(--textcolor);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -21,4 +21,8 @@ header{
     background-image: url(../images/IMG_9697.jpeg);
     background-position: center;
     background-size: cover;
+}
+
+#blog{
+    display: flex;
 }
