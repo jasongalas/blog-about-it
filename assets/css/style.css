@@ -15,13 +15,14 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding: 10px;
 }
 
 header h1{
     font-style: italic;
 }
 
-nav{
+nav a{
     color: var(--textcolor);
 }
 
@@ -34,6 +35,11 @@ nav{
     background-image: url(../images/IMG_9697.jpeg);
     background-position: center;
     background-size: cover;
+}
+
+.hero h2{
+    background-color: transparent;
+    color: white;
 }
 
 main h3{

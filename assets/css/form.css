@@ -2,19 +2,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-style: inset;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+p{
+    background-color: transparent;
+    font-weight: bolder;
 }
 
 #name{
     width: 20%;
+    border-radius: 1%;
 }
 
 #title{
     width: 30%;
+    border-radius: 1%;
 }
 
 #content{
     width: 90%;
     height: 200px;
+    border-radius: 1%;
 }
 
 #post{

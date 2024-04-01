@@ -56,7 +56,7 @@ init();
 //light & dark mode switcher
 
 const themeSwitcher = document.querySelector('#theme-switcher');
-const container = document.querySelector('.container');
+const darkMode = document.querySelector('.background');
 
 let mode = dark
 
@@ -64,11 +64,11 @@ themeSwitcher.addEventListener('click', function () {
     // If mode is dark, apply light background
     if (mode === 'dark') {
       mode = 'light';
-      container.setAttribute('class', 'light');
+      darkMode.setAttribute('class', 'light');
     }
     // If mode is light, apply dark background
     else {
       mode = 'dark';
-      container.setAttribute('class', 'dark');
+      darkMode.setAttribute('class', 'dark');
     }
-}
+});

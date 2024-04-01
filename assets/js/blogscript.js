@@ -10,7 +10,7 @@ function postABlog(){
         li1.textContent = "Blog Title: "+ blogPosts[blog].blogTitle;
         // li.setAttribute('data-index', blog);
         const li2 = document.createElement('li');
-        li2.textContent = "Chosen Name: "+ blogPosts[blog].userName;
+        li2.textContent = "By: "+ blogPosts[blog].userName;
         const li3 = document.createElement('li');
         li3.textContent = blogPosts[blog].blogContent;
         ul.appendChild(li1);
