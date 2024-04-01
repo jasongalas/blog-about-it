@@ -1,0 +1,16 @@
+#blog-list{
+
+}
+
+ul{
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+li{
+    list-style: none;
+    letter-spacing: 1px;
+}

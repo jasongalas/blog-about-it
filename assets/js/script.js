@@ -33,30 +33,13 @@ function writeABlog(){
 
     localStorage.setItem(`posts`, JSON.stringify(posts));
 
-    window.location.href="blog.html/"
-}
-
-//Make a function that writes the blog posts, parsing the JSON.
-
-function postABlog(){
-    const blogPosts = JSON.parse(localStorage.getItem('posts'));
-
-    for (let blog = 0; blog < posts.length; i++) {
-        const todo = todos[i];
-    
-        const li = document.createElement('li');
-        li.textContent = blog;
-        li.setAttribute('data-index', blog);
-    
-        li.appendChild(button);
-        blogPosts.appendChild(li);
-    }
+    location.replace("./blog.html")
 }
 
 //Make an event that triggers the function, and double checks that the fields are not blank.
 
 button.addEventListener('click', function (event) {;
-    event.preventDefault;
+    event.preventDefault();
 
     if (chosenName.value === '' || title.value === '' || content.value === '') {
         alert("Please fill in all fields!");
@@ -65,8 +48,27 @@ button.addEventListener('click', function (event) {;
     }
 
     writeABlog();
-    postABlog();
     
 });
 
 init();
+
+//light & dark mode switcher
+
+const themeSwitcher = document.querySelector('#theme-switcher');
+const container = document.querySelector('.container');
+
+let mode = dark
+
+themeSwitcher.addEventListener('click', function () {
+    // If mode is dark, apply light background
+    if (mode === 'dark') {
+      mode = 'light';
+      container.setAttribute('class', 'light');
+    }
+    // If mode is light, apply dark background
+    else {
+      mode = 'dark';
+      container.setAttribute('class', 'dark');
+    }
+}

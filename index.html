@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
     <title>Blog About It</title>
 </head>
 <body>
-    <header>
-        <h1>Blog About It</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#blog">Blog</a>
-            <a href="#copyright">Copyright</a>
-        <!-- Dark/Lightmode Switcher -->
-        <p>Dark Mode</p>
-        <input type="checkbox" id="theme-switcher">
-        <p>Light Mode</p>
-        </nav>
-    </header>
+    <div class = "dark">
+        <header>
+            <h1>Blog About It</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#blog">Blog</a>
+                <a href="#copyright">Copyright</a>
+            <!-- Dark/Lightmode Switcher -->
+            <button id="theme-switcher">Dark/Light</button>
+            </nav>
+        </header>
 
     <section class="hero">
         <h2>What do you want to get off your chest?</h2>
-    </section>
+        </section>
 
         <main>
             <h3 id="about">Take what's inside your mind;</h3>
-                <p>leave it here for the world to see.</p>
+                <p>leave it here for the world to see.</p><br>
             <!-- Blog form -->
             <form id="blog">
-                <input placeholder="Chosen Name" id="name" />
-                <input placeholder="Blog Title" id="title" />
-                <input placeholder="..." id="content" />
+                <p>Chosen Name</p>
+                <input placeholder="Chosen Name" id="name"/><br>
+                <p>Blog Title</p>
+                <input placeholder="Blog Title" id="title"/><br>
+                <p>Content</p>
+                <input id="content"/><br>
                 <button id="post">Post</button>
-            </form>
+            </form><br>
         </main>
 
     <footer id="copyright">&copy<a href="https://jasongalas.github.io/coding-portfolio/">Paws Production 🐾</a></footer>
+    </div>
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

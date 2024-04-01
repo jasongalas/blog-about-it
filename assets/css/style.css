@@ -1,12 +1,12 @@
 *{
-    background-color: teal;
+    background-color: rgb(192, 192, 192);
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
-    --headlinecolor: black;
-    --textcolor: rgb(44, 42, 42);
+    --textcolor: black;
 }
 
 header{
@@ -17,12 +17,34 @@ header{
     align-items: center;
 }
 
+header h1{
+    font-style: italic;
+}
+
+nav{
+    color: var(--textcolor);
+}
+
 .hero{
+    padding: 5% 10%;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    font-style: italic;
     background-image: url(../images/IMG_9697.jpeg);
     background-position: center;
     background-size: cover;
 }
 
-#blog{
-    display: flex;
+main h3{
+    text-align: center;
+    font-size: 35px;
+}
+
+main p{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
 }
