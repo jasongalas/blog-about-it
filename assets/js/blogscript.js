@@ -6,16 +6,18 @@ function postABlog(){
     for (let blog = 0; blog < blogPosts.length; blog++) {
         const ul = document.createElement('ul');
     
-        const li1 = document.createElement('li');
-        li1.textContent = "Blog Title: "+ blogPosts[blog].blogTitle;
-        // li.setAttribute('data-index', blog);
-        const li2 = document.createElement('li');
-        li2.textContent = "By: "+ blogPosts[blog].userName;
-        const li3 = document.createElement('li');
-        li3.textContent = blogPosts[blog].blogContent;
-        ul.appendChild(li1);
-        ul.appendChild(li2);
-        ul.appendChild(li3);
+        const title = document.createElement('h2');
+        title.textContent = blogPosts[blog].blogTitle;
+        title.classList.add("h2");
+        const author = document.createElement('span');
+        author.textContent = "By: "+ blogPosts[blog].userName;
+        author.classList.add("span");
+        const content = document.createElement('p');
+        content.textContent = blogPosts[blog].blogContent;
+        content.classList.add("p");
+        ul.appendChild(title);
+        ul.appendChild(author);
+        ul.appendChild(content);
         blogList.appendChild(ul);
         console.log(ul)
     }

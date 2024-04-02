@@ -1,22 +1,36 @@
 main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 ul{
     border: thick;
     border-style: solid;
-    border-radius: 5%;
+    border-radius: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    width: 75%;
     margin: 20px;
+    list-style: none;
 }
 
-li{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style: none;
-    letter-spacing: 1px;
+h2{
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+span{
+    font-size: large;
+    font-weight: 500;
+}
+
+p{
+    padding-bottom: 3px;
+    font-size: medium;
+    font-style: oblique;
 }

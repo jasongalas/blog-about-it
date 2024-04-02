@@ -5,27 +5,32 @@
     border-style: inset;
     background-color: antiquewhite;
     padding: 10px;
+    height: 450px;
 }
 
 p{
     background-color: transparent;
     font-weight: bolder;
+    font-size: large;
 }
 
 #name{
     width: 20%;
     border-radius: 1%;
+    padding: 3px;
 }
 
 #title{
     width: 30%;
     border-radius: 1%;
+    padding: 3px;
 }
 
 #content{
     width: 90%;
-    height: 200px;
+    height: 300px;
     border-radius: 1%;
+    padding: 5px;
 }
 
 #post{
