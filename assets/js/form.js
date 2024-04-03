@@ -1,8 +1,11 @@
 const button = document.querySelector("#post");
+const chosenName = document.querySelector("#name");
+const title = document.querySelector("#title");
+const content = document.querySelector("#content");
 
-let posts = [];
+let posts = JSON.parse(localStorage.getItem('posts')) || [];
 
-var blogTemplate = [
+const blogTemplate = [
     {
         userName: "test",
         blogTitle: "First test",
@@ -11,15 +14,13 @@ var blogTemplate = [
 ]
 
 function init(){
-    let blogPosts = JSON.parse(localStorage.getItem('posts'));
-
-if(!blogPosts){
-    blogPosts = []
-}
-    blogPosts.push(blogTemplate)
+    // If there are no posts currently stored, initialize with the blogTemplate.
+    if(posts.length === 0){
+    
+        localStorage.setItem('posts', JSON.stringify(posts));
 
 }
-
+}
 //Make a function that creates the blog posts, stores them, adds them to the array, and changes pages.
 
 function writeABlog(){
@@ -31,9 +32,9 @@ function writeABlog(){
 
     posts.unshift(blogPost);
     blogPost.value = "";
-
+    
     localStorage.setItem(`posts`, JSON.stringify(posts));
-
+    
     location.replace("./blog.html");
 }
 
