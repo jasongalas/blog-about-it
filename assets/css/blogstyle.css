@@ -34,3 +34,21 @@ p{
     font-size: medium;
     font-style: oblique;
 }
+
+@media screen and (max-width: 992px) {
+    .body {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .body {
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .body {
+        width: 100%;     
+  }
+}

@@ -6,7 +6,9 @@ const chosenName = document.querySelector("#name");
 const title = document.querySelector("#title");
 const content = document.querySelector("#content");
 const button = document.querySelector("#post");
-
+const themeSwitcher = document.querySelector('#theme-switcher');
+const mode = document.querySelector('.background')
+    
 let posts = [];
 
 // Make a function that checks if there are posts in local storage. If there are, fill the post variable//
@@ -54,21 +56,21 @@ button.addEventListener('click', function (event) {;
 init();
 
 //light & dark mode switcher
+let theme = 'light'
 
-const themeSwitcher = document.querySelector('#theme-switcher');
-const darkMode = document.querySelector('.background');
+themeSwitcher.addEventListener('click', function(){
 
-let mode = dark
-
-themeSwitcher.addEventListener('click', function () {
-    // If mode is dark, apply light background
-    if (mode === 'dark') {
-      mode = 'light';
-      darkMode.setAttribute('class', 'light');
-    }
     // If mode is light, apply dark background
-    else {
-      mode = 'dark';
-      darkMode.setAttribute('class', 'dark');
-    }
+    if (theme === 'light') {
+        theme = 'dark';
+        mode.setAttribute('class', 'dark');
+      }
+      // If mode is dark, apply light background
+      else {
+        theme = 'light';
+        mode.setAttribute('class', 'light');
+      }
+
 });
+
+    

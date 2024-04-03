@@ -5,14 +5,36 @@
 }
 
 :root{
-    --textcolor: black;
+    --light-textColor: black;
+    --dark-textColor: white;
+    --light-bgColor: rgb(192, 192, 192);
+    --dark-bgColor: rgb(87, 87, 87);
 }
 
-header{
-    color: var(--textcolor);
+.light{
+    background-color: var(--light-bgColor);
+    color: var(--light-textColor);
+}
+
+.dark{
+    background-color: var(--dark-bgColor);
+    color: var(--dark-textColor);
+}
+
+.light header, .light footer{
+    color: var(--light-textColor);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+    
+.dark header, .dark footer{
+    color: var(--dark-textColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     padding: 10px;
 }
@@ -23,19 +45,34 @@ header h1{
     margin-right: auto;
 }
 
-nav a{
-    color: var(--textcolor);
+.light nav a{
+    color: var(--light-textColor);
     padding: 3px;
     margin-right: auto;
 }
 
-nav button{
-    background-color: grey;
+.dark nav a{
+    color: var(--dark-textColor);
+    padding: 3px;
+    margin-right: auto;
+}
+
+.light nav button{
+    background-color: var(--dark-bgColor);
     margin-right: 5px;
 }
 
-.background{
-    background-color: rgb(192, 192, 192);
+.dark nav button{
+    background-color: var(--light-bgColor);
+    margin-right: 5px;
+}
+
+.light footer a{
+    color: var(--light-textColor);
+}
+
+.dark footer a{
+    color: var(--dark-textColor);
 }
 
 .hero{
@@ -51,7 +88,8 @@ nav button{
 
 .hero h2{
     background-color: transparent;
-    color: white;
+    color: rgba(255, 255, 255, 0.842);
+    font-size: x-large;
 }
 
 main h3{
@@ -68,4 +106,22 @@ main p{
 footer{
     text-align: center;
     padding-bottom: 3px;
+}
+
+@media screen and (max-width: 992px) {
+    .body {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .body {
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .body {
+        width: 100%;     
+  }
 }
