@@ -1,5 +1,6 @@
 //Make a function that writes the blog posts, parsing the JSON.
 const blogList = document.getElementById("blog-list")
+
 function postABlog(){
     const blogPosts = JSON.parse(localStorage.getItem('posts')) || [];
     console.log(blogPosts)

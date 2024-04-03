@@ -10,17 +10,14 @@ This app will run in any browser, no installation required.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+assets/images/Screenshot 2024-04-02 at 9.44.18 PM.png
+assets/images/Screenshot 2024-04-02 at 9.44.21 PM.png
+assets/images/Screenshot 2024-04-02 at 10.11.10 PM.png
+assets/images/Screenshot 2024-04-02 at 10.11.17 PM.png
 
 ## Credits
 
-I had a great tutor help me over the weekend with the JavaScript, help from a partner as well, and of course the support of our instructor and TA.
+I had a great tutor help me over the weekend with the JavaScript, help from a partner as well, and of course the support of our instructor and TA. I also had an eleventh hour assist from the askBCS community.
 
 ## License
 

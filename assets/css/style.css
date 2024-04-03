@@ -45,18 +45,6 @@ header h1{
     margin-right: auto;
 }
 
-.light nav a{
-    color: var(--light-textColor);
-    padding: 3px;
-    margin-right: auto;
-}
-
-.dark nav a{
-    color: var(--dark-textColor);
-    padding: 3px;
-    margin-right: auto;
-}
-
 .light nav button{
     background-color: var(--dark-bgColor);
     margin-right: 5px;
@@ -67,11 +55,11 @@ header h1{
     margin-right: 5px;
 }
 
-.light footer a{
+.light header a, .light footer a{
     color: var(--light-textColor);
 }
 
-.dark footer a{
+.dark header a, .dark footer a{
     color: var(--dark-textColor);
 }
 

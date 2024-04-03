@@ -5,8 +5,22 @@ main{
     justify-content: center;
 }
 
-ul{
+.dark ul{
     border: thick;
+    border-style: solid;
+    border-radius: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 75%;
+    margin: 20px;
+    list-style: none;
+}
+
+.light ul{
+  border: thick;
     border-style: solid;
     border-radius: 3%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,11 +36,13 @@ ul{
 h2{
     font-size: xx-large;
     font-weight: 900;
+    padding: 5px;
 }
 
 span{
     font-size: large;
     font-weight: 500;
+    padding: 5px;
 }
 
 p{
