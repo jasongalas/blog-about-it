@@ -1,5 +1,7 @@
 const button = document.querySelector("#post");
 
+let posts = [];
+
 var blogTemplate = [
     {
         userName: "test",

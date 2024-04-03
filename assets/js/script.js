@@ -6,8 +6,7 @@ const title = document.querySelector("#title");
 const content = document.querySelector("#content");
 const themeSwitcher = document.querySelector('.theme-switcher');
 const mode = document.querySelector('.background')
-    
-let posts = [];
+
 
 // Make a function that checks if there are posts in local storage. If there are, fill the post variable//
 
