@@ -15,8 +15,6 @@ if(!blogPosts){
 }
 }
 
-init()
-
 //Make a function that creates the blog posts, stores them, adds them to the array, and changes pages.
 
 function writeABlog(){
@@ -48,3 +46,5 @@ button.addEventListener('click', function (event) {;
     writeABlog();
     
 });
+
+init()
