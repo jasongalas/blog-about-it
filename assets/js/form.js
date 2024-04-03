@@ -32,6 +32,7 @@ function writeABlog(){
     location.replace("./blog.html")
 }
 
+init()
 //Make an event that triggers the function, and double checks that the fields are not blank.
 
 button.addEventListener('click', function (event) {;
@@ -46,5 +47,3 @@ button.addEventListener('click', function (event) {;
     writeABlog();
     
 });
-
-init()
