@@ -1,3 +1,5 @@
+const button = document.querySelector("#post");
+
 var blogTemplate = [
     {
         userName: "test",
@@ -10,9 +12,7 @@ function init(){
     let blogPosts = JSON.parse(localStorage.getItem('posts'));
 
 if(!blogPosts){
-
     blogPosts = []
-
 }
     blogPosts.push(blogTemplate)
 

@@ -4,7 +4,6 @@ HTML file to give us the ability to manipulate them. Make an array to store the 
 const chosenName = document.querySelector("#name");
 const title = document.querySelector("#title");
 const content = document.querySelector("#content");
-const button = document.querySelector("#post");
 const themeSwitcher = document.querySelector('.theme-switcher');
 const mode = document.querySelector('.background')
     
