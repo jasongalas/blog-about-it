@@ -10,8 +10,8 @@ function init(){
     let blogPosts = JSON.parse(localStorage.getItem('posts'));
 
 if(!blogPosts){
-    blogPosts.push(blogTemplate)
-    localStorage.setItem("posts",JSON.stringify(blogPosts))
+    blogPosts.push(blogTemplate);
+    localStorage.setItem("posts",JSON.stringify(blogPosts));
 }
 }
 
@@ -29,7 +29,7 @@ function writeABlog(){
 
     localStorage.setItem(`posts`, JSON.stringify(posts));
 
-    location.replace("./blog.html")
+    location.replace("./blog.html");
 }
 
 init()
