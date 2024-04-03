@@ -10,9 +10,12 @@ function init(){
     let blogPosts = JSON.parse(localStorage.getItem('posts'));
 
 if(!blogPosts){
-    blogPosts.push(blogTemplate);
-    localStorage.setItem("posts",JSON.stringify(blogPosts));
+
+    blogPosts = []
+
 }
+    blogPosts.push(blogTemplate)
+
 }
 
 //Make a function that creates the blog posts, stores them, adds them to the array, and changes pages.
